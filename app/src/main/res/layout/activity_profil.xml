@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <!-- Custom Toolbar -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:paddingHorizontal="16dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_menu"
+            app:tint="#1A1A1A"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="ZENSTUDY"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#1A1A1A"
+            android:letterSpacing="0.1"/>
+
+        <TextView
+            android:id="@+id/tvProfileInitialTop"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_profile_circle"
+            android:gravity="center"
+            android:text="K"
+            android:textColor="#1A1A1A"
+            android:textSize="12sp"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EEEEEE"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <!-- Profile Card -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_mood_card"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="24dp">
+
+                <TextView
+                    android:id="@+id/tvProfileInitialCard"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/bg_profile_circle"
+                    android:backgroundTint="#FFFFFF"
+                    android:gravity="center"
+                    android:text="K"
+                    android:textColor="#1A1A1A"
+                    android:textSize="32sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tvProfileName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Kevin"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="#1A1A1A"/>
+
+                <TextView
+                    android:id="@+id/tvProfileEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="kevin@email.com"
+                    android:textSize="14sp"
+                    android:textColor="#1A1A1A"/>
+
+                <!-- Stats Row 1 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:orientation="horizontal">
+
+                    <!-- 47 Hari Aktif -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_white_card"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="10dp">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="47 Hari" android:textStyle="bold" android:textSize="12sp" android:textColor="#1A1A1A"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Aktif" android:textSize="10sp" android:textColor="#6B6B6B"/>
+                    </LinearLayout>
+
+                    <Space android:layout_width="8dp" android:layout_height="wrap_content"/>
+
+                    <!-- 12 Bab Selesai -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_white_card"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="10dp">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="12 Bab" android:textStyle="bold" android:textSize="12sp" android:textColor="#1A1A1A"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Selesai" android:textSize="10sp" android:textColor="#6B6B6B"/>
+                    </LinearLayout>
+
+                    <Space android:layout_width="8dp" android:layout_height="wrap_content"/>
+
+                    <!-- 85% Konsistensi -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_white_card"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="10dp">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="85%" android:textStyle="bold" android:textSize="12sp" android:textColor="#1A1A1A"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Konsistensi" android:textSize="10sp" android:textColor="#6B6B6B"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- Stats Row 2 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <!-- Total Waktu -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_white_card"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Total Waktu" android:textSize="12sp" android:textColor="#6B6B6B"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="24 Jam" android:textStyle="bold" android:textSize="18sp" android:textColor="#1A1A1A"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="bulan ini" android:textSize="11sp" android:textColor="#6B6B6B"/>
+                </LinearLayout>
+
+                <Space android:layout_width="12dp" android:layout_height="wrap_content"/>
+
+                <!-- Latihan Soal -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_white_card"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Latihan Soal" android:textSize="12sp" android:textColor="#6B6B6B"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="156 Soal" android:textStyle="bold" android:textSize="18sp" android:textColor="#1A1A1A"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="terjawab" android:textSize="11sp" android:textColor="#6B6B6B"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- Streak Belajar -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_white_card"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Streak Belajar" android:textStyle="bold" android:textSize="15sp" android:textColor="#1A1A1A"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="5 hari berturut-turut" android:textSize="12sp" android:textColor="#6B6B6B"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+                        <ImageView android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/ic_streak_fire"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:text="5" android:textStyle="bold" android:textSize="16sp" android:textColor="#1A1A1A"/>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <TextView android:layout_width="28dp" android:layout_height="28dp" android:background="@drawable/bg_day_circle_done" android:text="✓" android:gravity="center" android:textSize="12sp" android:textColor="#1A1A1A"/>
+                    <Space android:layout_width="8dp" android:layout_height="wrap_content"/>
+                    <TextView android:layout_width="28dp" android:layout_height="28dp" android:background="@drawable/bg_day_circle_done" android:text="✓" android:gravity="center" android:textSize="12sp" android:textColor="#1A1A1A"/>
+                    <Space android:layout_width="8dp" android:layout_height="wrap_content"/>
+                    <TextView android:layout_width="28dp" android:layout_height="28dp" android:background="@drawable/bg_day_circle_done" android:text="✓" android:gravity="center" android:textSize="12sp" android:textColor="#1A1A1A"/>
+                    <Space android:layout_width="8dp" android:layout_height="wrap_content"/>
+                    <TextView android:layout_width="28dp" android:layout_height="28dp" android:background="@drawable/bg_day_circle_done" android:text="✓" android:gravity="center" android:textSize="12sp" android:textColor="#1A1A1A"/>
+                    <Space android:layout_width="8dp" android:layout_height="wrap_content"/>
+                    <TextView android:layout_width="28dp" android:layout_height="28dp" android:background="@drawable/bg_day_circle_done" android:text="✓" android:gravity="center" android:textSize="12sp" android:textColor="#1A1A1A"/>
+                    <Space android:layout_width="4dp" android:layout_height="wrap_content"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=".." android:textColor="#D0D0D0"/>
+                    <Space android:layout_width="4dp" android:layout_height="wrap_content"/>
+                    <View android:layout_width="28dp" android:layout_height="28dp" android:background="@drawable/bg_day_circle"/>
+                    <Space android:layout_width="4dp" android:layout_height="wrap_content"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=".." android:textColor="#D0D0D0"/>
+                    <Space android:layout_width="4dp" android:layout_height="wrap_content"/>
+                    <View android:layout_width="28dp" android:layout_height="28dp" android:background="@drawable/bg_day_circle"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- Menu List -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <!-- Notifikasi -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:background="@drawable/bg_white_card"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:paddingHorizontal="16dp"
+                    android:layout_marginBottom="12dp">
+                    <ImageView android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/ic_notifications"/>
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginLeft="12dp" android:text="Notifikasi" android:textStyle="bold" android:textSize="14sp" android:textColor="#1A1A1A"/>
+                    <ImageView android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/ic_chevron_right"/>
+                </LinearLayout>
+
+                <!-- Target Belajar -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:background="@drawable/bg_white_card"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:paddingHorizontal="16dp"
+                    android:layout_marginBottom="12dp">
+                    <ImageView android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/ic_target"/>
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginLeft="12dp" android:text="Target Belajar" android:textStyle="bold" android:textSize="14sp" android:textColor="#1A1A1A"/>
+                    <ImageView android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/ic_chevron_right"/>
+                </LinearLayout>
+
+                <!-- Edit Profil -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:background="@drawable/bg_white_card"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:paddingHorizontal="16dp"
+                    android:layout_marginBottom="12dp">
+                    <ImageView android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/ic_edit_profile"/>
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginLeft="12dp" android:text="Edit Profil" android:textStyle="bold" android:textSize="14sp" android:textColor="#1A1A1A"/>
+                    <ImageView android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/ic_chevron_right"/>
+                </LinearLayout>
+
+                <!-- Keluar -->
+                <LinearLayout
+                    android:id="@+id/btnKeluar"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:background="@drawable/bg_white_card"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:paddingHorizontal="16dp"
+                    android:layout_marginBottom="40dp">
+                    <ImageView android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/ic_logout"/>
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginLeft="12dp" android:text="Keluar" android:textStyle="bold" android:textSize="14sp" android:textColor="#FF5252"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!-- Bottom Navigation -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        app:menu="@menu/bottom_nav_menu"
+        app:itemIconTint="#1A1A1A"
+        app:itemTextColor="#1A1A1A"
+        app:elevation="8dp"/>
+
+</LinearLayout>

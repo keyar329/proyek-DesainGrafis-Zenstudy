@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.ZenStudy" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/zen_accent</item>
+        <item name="colorPrimaryVariant">@color/zen_black</item>
+        <item name="colorOnPrimary">@color/zen_white</item>
+    </style>
+
+    <style name="Theme.ZenStudy.NoActionBar" parent="Theme.ZenStudy">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+</resources>
